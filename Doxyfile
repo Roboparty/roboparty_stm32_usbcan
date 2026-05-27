@@ -1,0 +1,101 @@
+# Doxyfile for roboto_usb2can project
+
+# Project related configuration options
+PROJECT_NAME           = "roboto_usb2can"
+PROJECT_NUMBER         = "v2.0.0"
+PROJECT_BRIEF          = "USB-CAN Adapter Firmware based on Zephyr RTOS"
+PROJECT_LOGO           =
+
+# Input files configuration
+INPUT                  = src/ boards/ README.md
+FILE_PATTERNS          = *.c *.h *.md *.dts
+RECURSIVE              = YES
+EXCLUDE                = build/ test/ .git/
+EXCLUDE_PATTERNS       = */build/* */.*
+
+# Output configuration
+OUTPUT_DIRECTORY       = docs
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_XML           = NO
+HTML_OUTPUT            = html
+HTML_THEME             =
+
+# Documentation extraction
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+EXTRACT_ANON_NSPACES   = NO
+
+# Source browsing
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Preprocessing
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = YES
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           = src/ \
+                        boards/roboto_usb2can/ \
+                        build/zephyr/include/generated/
+
+# Predefined macros for Zephyr
+PREDEFINED             = CONFIG_USB_DEVICE_STACK_NEXT=1 \
+                        __GNUC__=1 \
+                        __packed=__attribute__((packed)) \
+                        __unused=__attribute__((unused)) \
+                        DEVICE_DT_GET(node)="device_ptr" \
+                        DT_NODELABEL(label)="dt_node" \
+                        GPIO_DT_SPEC_GET(node,prop)="gpio_spec" \
+                        DT_ALIAS(alias)="alias_node" \
+                        K_MSEC(ms)="timeout" \
+                        K_NO_WAIT="no_wait" \
+                        ARG_UNUSED(x)= \
+                        __fallthrough=
+
+# Diagrams and graphs
+HAVE_DOT               = NO
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK               = NO
+TEMPLATE_RELATIONS     = NO
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+# Search and navigation
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+
+# Styling
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+HTML_DYNAMIC_SECTIONS  = YES
+GENERATE_TREEVIEW      = YES
+
+# Warnings and verbosity
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = NO
+WARN_FORMAT            = "$file:$line: $text"
+
+# Aliases for common doxygen commands
+ALIASES                = "zephyr=@par Zephyr RTOS:" \
+                        "hardware=@par Hardware:" \
+                        "config=@par Configuration:" \
+                        "example=@par Example:" \
+                        "note=@par Note:" \
+                        "warning=@par Warning:" \
+                        "interrupt=@par Interrupt Context:"

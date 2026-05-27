@@ -1,0 +1,36 @@
+name: Doxygen to GitHub Pages
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "src/**"
+      - "boards/**"
+      - "*.md"
+      - "Doxyfile"
+      - "doxygen-guide.md"
+      - ".github/workflows/doxygen-gh-pages.yml"
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Install Doxygen and Graphviz
+      - name: Install Doxygen
+        run: sudo apt update && sudo apt install -y doxygen graphviz
+
+      # 3. Generate Doxygen docs
+      - name: Generate Doxygen docs
+        run: doxygen Doxyfile
+
+      # 4. Deploy to gh-pages branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub-provided token
+          publish_dir: ./docs/html # Doxygen output directory
+          publish_branch: gh-pages # Deploy to gh-pages

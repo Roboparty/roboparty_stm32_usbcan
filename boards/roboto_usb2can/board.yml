@@ -1,0 +1,8 @@
+board:
+  name: roboto_usb2can
+  full_name: roboto_usb2can
+  vendor: roboparty
+  socs:
+    - name: stm32g431xx
+      variants:
+        - name: 'roboto_usb2can'

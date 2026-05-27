@@ -1,0 +1,11 @@
+build/
+dist/
+docs/
+
+.cache/
+.vscode/
+
+flasher/
+test/
+
+*.spec

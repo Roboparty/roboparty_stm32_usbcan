@@ -1,0 +1,15 @@
+identifier: roboto_usb2can/stm32g431xx/roboto_usb2can
+name: roboto_usb2can
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+ram: 144
+flash: 128
+supported:
+  - can
+  - gpio
+  - usb_device
+  - usbd
+vendor: roboparty

@@ -1,0 +1,5 @@
+# Copyright (c) 2024 Sean Nyekjaer <sean@geanix.com>
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_ROBOTO_USB2CAN
+	select SOC_STM32G431XX

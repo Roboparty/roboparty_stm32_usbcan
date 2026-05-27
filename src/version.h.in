@@ -1,0 +1,14 @@
+#ifndef _VERSION_H_
+#define _VERSION_H_
+
+#define APP_VERSION_MAJOR @APP_VERSION_MAJOR@
+#define APP_VERSION_MINOR @APP_VERSION_MINOR@
+#define APP_VERSION_PATCH @APP_VERSION_PATCH@
+
+/* Version string, e.g., "1.0.0" */
+#define APP_VERSION_STR   "@APP_VERSION_MAJOR@.@APP_VERSION_MINOR@.@APP_VERSION_PATCH@"
+
+/* BCD-encoded version number (for USB device descriptor), e.g., 0x0100 */
+#define APP_VERSION_BCD   ((APP_VERSION_MAJOR << 8) | (APP_VERSION_MINOR))
+
+#endif /* _VERSION_H_ */

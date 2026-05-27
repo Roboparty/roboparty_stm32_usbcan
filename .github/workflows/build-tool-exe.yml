@@ -1,0 +1,53 @@
+name: Build Host Tool EXE
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "scripts/roboto_usb2can_tool.py"
+  pull_request:
+    branches: [main, master]
+    paths:
+      - "scripts/roboto_usb2can_tool.py"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "scripts/requirements.txt"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyusb pyinstaller
+
+      - name: Build EXE
+        run: |
+          cd scripts
+          pyinstaller --noconfirm --onefile --windowed --clean --icon="icon.ico" --add-data "icon.ico;." roboto_usb2can_tool.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: roboto_usb2can_tool
+          path: scripts/dist/roboto_usb2can_tool.exe
+          retention-days: 30
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: scripts/dist/roboto_usb2can_tool.exe
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
