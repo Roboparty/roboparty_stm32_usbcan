@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['can_5ferr_5fframe_5fthreshold_0',['CAN_ERR_FRAME_THRESHOLD',['../roboto__usb2can_8h.html#a8da8eccf7db0dc6c5586e6618cace82e',1,'roboto_usb2can.h']]],
+  ['can_5ferr_5fpassive_5flimit_1',['CAN_ERR_PASSIVE_LIMIT',['../roboto__usb2can_8h.html#add7706d1af128286892661eb17113abc',1,'roboto_usb2can.h']]],
+  ['can_5ferr_5fwindow_5fms_2',['CAN_ERR_WINDOW_MS',['../roboto__usb2can_8h.html#a3833ad1231d2e3c3cb76039427d3f3fa',1,'roboto_usb2can.h']]],
+  ['can_5ferror_5fmonitor_3',['can_error_monitor',['../structcan__error__monitor.html',1,'']]],
+  ['can_5fled_4',['can_led',['../led_8c.html#a765a8143b987418a4fd699c5db0e52d7',1,'led.c']]],
+  ['can_5fled_5factive_5',['CAN_LED_ACTIVE',['../roboto__usb2can_8h.html#a34637a6d7d32b45c84b4c07438090eceacf377ad800b3d470f72cd4d2eb608b85',1,'roboto_usb2can.h']]],
+  ['can_5fled_5fblink_5fwork_6',['can_led_blink_work',['../led_8c.html#a8461ae3297b3085c3a1126e01ffd1e30',1,'led.c']]],
+  ['can_5fled_5ferror_7',['CAN_LED_ERROR',['../roboto__usb2can_8h.html#a34637a6d7d32b45c84b4c07438090eceacd0f89acad0edd90be13a14c56d264ea',1,'roboto_usb2can.h']]],
+  ['can_5fled_5foff_8',['CAN_LED_OFF',['../roboto__usb2can_8h.html#a34637a6d7d32b45c84b4c07438090ecea53cf5edbd2e469cdaaa5d1a1ad723834',1,'roboto_usb2can.h']]],
+  ['can_5fled_5fpatterns_9',['can_led_patterns',['../roboto__usb2can_8h.html#adff180ee3f4e0a15b398499b90dee9d2',1,'roboto_usb2can.h']]],
+  ['can_5fled_5fstate_10',['can_led_state',['../led_8c.html#acf157a872b00b2e9c8d1acef02686f78',1,'led.c']]],
+  ['can_5fled_5fstatus_11',['can_led_status',['../roboto__usb2can_8h.html#a34637a6d7d32b45c84b4c07438090ece',1,'roboto_usb2can.h']]],
+  ['can_5fled_5fwarning_12',['CAN_LED_WARNING',['../roboto__usb2can_8h.html#a34637a6d7d32b45c84b4c07438090eceaf418e49dc1bd7b49e69e43b90fcaeeb2',1,'roboto_usb2can.h']]],
+  ['can_5fled_5fwork_13',['can_led_work',['../led_8c.html#ab52c9a6d5abd4a4ce72630d931af0ad3',1,'led.c']]],
+  ['can_5frepeat_5fcount_14',['can_repeat_count',['../led_8c.html#abb57f99ecf285547f3f0b42e5f2c4e25',1,'led.c']]],
+  ['can_5fstate_5fchange_5fcallback_15',['can_state_change_callback',['../main_8c.html#a66919f2d63b6cda6fa346eb2471ceada',1,'main.c']]],
+  ['cap_16',['cap',['../roboto__usb2can_8h.html#aa3d41312b0e2a356e04985c331a021e9',1,'cap:&#160;roboto_usb2can.h'],['../structusb__bos__msosv2.html#a8fade8ed4443ad7abc09e98c2886df39',1,'usb_bos_msosv2::cap']]],
+  ['compatible_5fid_17',['compatible_id',['../structmsos2__descriptor.html#afaaae94a552702bf4b030ca05e6285d3',1,'msos2_descriptor::compatible_id'],['../roboto__usb2can_8h.html#ac1f3928717267d4b6a89e15e6b6e6642',1,'compatible_id:&#160;roboto_usb2can.h']]],
+  ['compatible_5fid_5fwinusb_18',['COMPATIBLE_ID_WINUSB',['../roboto__usb2can_8h.html#a6cddf7455ca0e1ff8b11e70be32175d4',1,'roboto_usb2can.h']]],
+  ['current_5fcan_5fstatus_19',['current_can_status',['../led_8c.html#ae77dc21b3745384d94e23829d86e357a',1,'led.c']]],
+  ['current_5fusb_5fstatus_20',['current_usb_status',['../led_8c.html#ab614f0baaa15fd041a0f932b82b2a77f',1,'led.c']]]
+];
