@@ -150,6 +150,9 @@ Windows 下无需安装额外驱动，系统会自动识别为 WinUSB 设备。�
 pip install pyusb
 # 注意：Windows 用于通常自带 tkinter，Linux 可能需要 sudo apt install python3-tk
 
+# Windows: 从 https://github.com/libusb/libusb/releases 下载 libusb-1.0.dll
+# 放到 scripts/ 目录或系统 PATH 中
+
 # 运行 (确保 libusb-1.0.dll 在目录下或系统路径中)
 cd scripts
 python roboto_usb2can_tool.py

@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2025 roboparty <2321901849@qq.com>
+ * SPDX-License-Identifier: GPL-3.0-only
+ */
+
 #include "roboto_usb2can.h"
 
 LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);

@@ -153,6 +153,9 @@ Requires Python 3.8+ environment.
 pip install pyusb
 # Note: Windows usually comes with tkinter, Linux may need: sudo apt install python3-tk
 
+# Windows: download libusb-1.0.dll from https://github.com/libusb/libusb/releases
+# and place it in scripts/ or system PATH
+
 # Run (ensure libusb-1.0.dll is in directory or system path)
 cd scripts
 python roboto_usb2can_tool.py
@@ -317,7 +320,7 @@ sudo udevadm trigger
 
 **Q2: Python tool shows "Device not found"?**
 
-- Confirm `libusb-1.0.dll` exists.
+- Download `libusb-1.0.dll` from https://github.com/libusb/libusb/releases and place it in the `scripts/` directory.
 - On Linux, check USB permissions (`/etc/udev/rules.d/`), ensure current user has USB device access.
 
 **Q3: LED continuously fast blinking?**

@@ -1,4 +1,5 @@
-# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2025 roboparty <2321901849@qq.com>
+# SPDX-License-Identifier: GPL-3.0-only
 
 cmake_minimum_required(VERSION 3.20.0)
 

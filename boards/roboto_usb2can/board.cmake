@@ -1,5 +1,5 @@
 # Copyright (c) 2025 roboparty <2321901849@qq.com>
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifier: GPL-3.0-only
 
 board_runner_args(jlink "--device=STM32G431CB")
 board_runner_args(pyocd "--target=stm32g431cbtx")

@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) 2025 roboparty <2321901849@qq.com>
+# SPDX-License-Identifier: GPL-3.0-only
 
 # =================Configuration Area=================
 # Target bitrate

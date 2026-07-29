@@ -9,3 +9,6 @@ flasher/
 test/
 
 *.spec
+
+# libusb DLL (user must download from https://github.com/libusb/libusb)
+scripts/libusb-1.0.dll
